@@ -2,6 +2,6 @@
 layout: nil
 ---
 User-agent: *
-Disallow: /websocket-ruby/autobahn
+Disallow: /websocket-ruby/autobahn/
 
 Sitemap: {{ site.url }}/sitemap.xml
