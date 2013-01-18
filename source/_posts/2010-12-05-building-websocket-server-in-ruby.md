@@ -15,7 +15,7 @@ That's why I built [LibWebSocket](http://github.com/imanel/libwebsocket) library
 
 Currently most popular Ruby WebSocket server is em-websocket(I'm also using it in my [Socky](http://github.com/socky) project) and I believe that currently it's the best implementation. So why don't start from building similar server which just couple of lines instead of huge library?
 
-{% highlight ruby %}
+``` ruby
 #!/usr/bin/env ruby
 
 require 'rubygems'
@@ -50,7 +50,7 @@ EventMachine::run do
   EventMachine::start_server '0.0.0.0', 8080, EchoServer
   puts "Started EchoServer on #{host}:#{port}..."
 end
-{% endhighlight %}
+```
 
 And that's all! Of course it's just simplified implementation, but I think that shows what I'm talking about. No more handling events, checking version and implementing multiple drafts - it's all inside! And together with that we can also build client:
 
@@ -58,7 +58,7 @@ And that's all! Of course it's just simplified implementation, but I think that 
 
 This one is more tricky but still most work is handled by LibWebsocket:
 
-{% highlight ruby %}
+``` ruby
 require "socket"
 require 'libwebsocket'
 
@@ -110,7 +110,7 @@ class WebSocket
   end
 
 end
-{% endhighlight %}
+```
 
 This will allow to connecting, sending and receiving messages from WebSocket server in drafts #75 and #76(more vesions comming)
 
@@ -118,8 +118,8 @@ This will allow to connecting, sending and receiving messages from WebSocket ser
 
 [LibWebSocket](http://github.com/imanel/libwebsocket) is currently in very early state of development but I hope that it will move fast to stable version. You can now install it as gem and start using:
 
-{% highlight sh %}
+``` sh
 gem install libwebsocket
-{% endhighlight %}
+```
 
 See project at github: [http://github.com/imanel/libwebsocket](http://github.com/imanel/libwebsocket)

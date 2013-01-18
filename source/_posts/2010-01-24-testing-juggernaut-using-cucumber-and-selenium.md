@@ -7,15 +7,15 @@ During tests development you usually use well-known and tested solutions like [R
 
 By default Cucumber uses one browser to open your application and perform selected tests. But from time to time you may need more instances to run in parallel mode - e.g to test real-time user communication. Luckily there is an easy way to override Selenium scripts in Cucumber letting you open another browser instance and switch between them. You just need to add following lines into "env.rb" (or selenium dedicated configuration file).
 
-{% highlight ruby %}
+``` ruby
 $browser2 = Webrat::SeleniumSession.new.selenium
 $browser = nil
 $browser1 = Webrat::SeleniumSession.new.selenium
-{% endhighlight %}
+```
 
 The second line is necessary to proper initialization of the second browser by Cucumber. After that, you just need to write appropriate steps for Selenium, say:
 
-{% highlight ruby %}
+``` ruby
 Given /^I am using first browser$/ do
   if Webrat.configuration.mode == :selenium
     $browser = $browser1
@@ -27,11 +27,11 @@ Given /^I am using second browser$/ do
     $browser = $browser2
   end
 end
-{% endhighlight %}
+```
 
 By default the first browser will be active one. But you should not forget that lastly used browser is not restarted between two consecutive tests. You should always switch to the first browser at the end of your test. In addition, there are two useful steps:
 
-{% highlight ruby %}
+``` ruby
 When /^I wait for page to load$/ do
   if Webrat.configuration.mode == :selenium
     selenium.wait_for_page_to_load
@@ -43,6 +43,6 @@ Given /^I wait for juggernaut$/ do
     sleep(3)
   end
 end
-{% endhighlight %}
+```
 
 First one ensures that all scripts are loaded before moving on to the next steps. Second one gives Juggernaut time to deliver messages. With this configuration you can use all delivered by Cucumber steps without worrying about compatibility problems.

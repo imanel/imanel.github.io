@@ -15,9 +15,9 @@ I know that there's a lot of scary methods around net that will show you methods
 
 What you will need to do is editing file /etc/hosts, which contain DNS entries, and change one of currently used search providers to DuckDuckGo server.
 
-{% highlight sh %}
+``` sh
 184.72.115.86 search.yahoo.com
-{% endhighlight %}
+```
 
 This will change all searches via "Search using Yahoo!" option to search via DuckDuckGo. It's possible to change Google or Bing search to work like that, but it's not recommended because it will prevent to access all Google/Bing functionality, when Yahoo have it's search engine in separate subdomain so it's non-obtrusive.
 
@@ -29,6 +29,6 @@ In order to do so you will need to support for Greasemonkey UserScripts. There w
 
 After installing NinjaKit all you need is to add simple UserScript that will detect and redirect queries staring with bang - you can find it [here](https://gist.github.com/1817223). From now on you can use normal Google Search, but when i.e. want to search YouTube instead just type in search bar:
 
-{% highlight sh %}
+``` sh
 !yt funny cats
-{% endhighlight %}
+```
