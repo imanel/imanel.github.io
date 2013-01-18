@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Web standards in mobile browsers
+comments: true
 ---
 
 For the past few weeks I focused on developing [Socky](http://github.com/socky/socky-server-ruby) - new WebSocket based push server for Ruby on Rails. Its main advantage was to be working well in places where there is no flash - like iPhone or iPad. It is therefore obvious that I became very sensitive to standard implementation in so called "modern browsers" - also mobile ones. So, taking the opportunity of just released iOS4, I decided to write a few words about standard support in mobile browsers.

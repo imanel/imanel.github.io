@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to change default search engine in Safari 6?
+comments: true
 ---
 
 When new Safari will be released plugins like [Safari Omnibar](http://hackemist.com/SafariOmnibar/) will be obsolete - new Safari has functionality similar to Chrome Omnibox. Yet - one function is missing: option to change search provider. I'm pretty sure that a lot of us use plugins like SafariOmnibar not just to integrate Google Search with URL bar, but also to be able to use different search providers than Google, Bing and Yahoo.

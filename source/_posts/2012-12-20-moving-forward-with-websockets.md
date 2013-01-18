@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Moving forward with WebSockets
+comments: true
 ---
 
 Two years ago I created [LibWebSocket](https://rubygems.org/gems/libwebsocket) - gem designed to abstract complicated WebSocket API and make it easy to use. During this time a lot things happened - several big gems started using LibWebSocket(like Selenium-Webdriver and Pusher), and it was downloaded nearly 1,5 million times. A lot changed in WebSocket world itself - couple drafts passed, specification [was standardized](http://datatracker.ietf.org/doc/rfc6455/?include_text=1) and most browsers implemented [native support](http://caniuse.com/websockets) for WS protocol.

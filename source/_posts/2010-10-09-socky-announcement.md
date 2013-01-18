@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Socky Announcement
+comments: true
 ---
 
 Meet Socky - the ultimate open-source, cross-platform, secure push server solution for your web applications! Socky uses standard WebSockets where available, with graceful fallback to Flash-based component making it usable even on mobile devices running iOS, Android and other Flash-enabled browsers.

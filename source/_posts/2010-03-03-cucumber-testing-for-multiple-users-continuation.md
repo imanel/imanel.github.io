@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cucumber testing for multiple users - continuation
+comments: true
 ---
 
 A little over a month ago you could read my article about real-time applications testing using Cucumber. In the meantime a new version of Cucumber emerged with [Capybara](http://github.com/jnicklas/capybara) support added. Since the previous method posed several problems during system to system migration (especially Snow Leopard hacks occasionally did not work in other systems) we'll try a new approach - this time working OOTB in every system.

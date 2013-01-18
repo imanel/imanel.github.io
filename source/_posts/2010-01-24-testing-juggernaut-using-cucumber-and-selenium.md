@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing Juggernaut using Cucumber and Selenium
+comments: true
 ---
 
 During tests development you usually use well-known and tested solutions like [RSpec](http://rspec.info) or [Cucumber](http://cukes.info) + [Webrat](http://github.com/brynary/webrat). They let you develop in a fast and convinient way. Unfortunately there are times when you need to get you hands dirty. If your application use only javascript then [Celerity](http://celerity.rubyforge.org) may help. But as soon as you incorporate Flash or Java into your application things get much harder. For such situations the [Selenium](http://seleniumhq.org) framework should be well-suited. It lets you test your app by simulating user actions through any (supported) web browser. Connection of Selenium and Cucumber seem to be very interesting option too - for more details look at Cucumber wiki.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Building WebSocket server in Ruby
+comments: true
 ---
 
 [Vti's post](http://showmetheco.de/articles/2010/11/timtow-to-build-a-websocket-server-in-perl.html) about building WebSocket server inspired me to write another one, but this time about both server and client in Ruby.

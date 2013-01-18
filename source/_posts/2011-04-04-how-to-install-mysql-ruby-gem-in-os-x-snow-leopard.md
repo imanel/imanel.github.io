@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to install MySQL Ruby gem in OS X Snow Leopard
+comments: true
 ---
 
 I know this was posted multiple times by other people, but this information is scattered and hard to find so I'm posting quick summary.

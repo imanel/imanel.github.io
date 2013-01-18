@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Accents in Sphinx
+comments: true
 ---
 
 When writing web applications you need to use full-text search from time to time. [Sphinx](http://www.sphinxsearch.com) or [Ferret](http://ferret.davebalmain.com/trac) may be of interest to you in such situation. I do prefer the Sphinx because of its speed and ease of use. But it can pose a problem for you from time to time - especially when searching in languages with accents. By default it does not convert UTF-8 properly - Sphinx treats characters outside the ASCII default set as the separation marks. You can find many pages with a simple solution to this issue - just add appropriate conversion rules to the configuration file:

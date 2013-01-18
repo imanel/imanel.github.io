@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CSS3 in every browser with SASS and PIE
+comments: true
 ---
 
 Recently, more and more popular is the use of the HTML5 and CSS3. Everyone rushed to them and this is perfectly understandable - after all, developers will be able to bet on semantic instead of doing work arounds for some browsers. But the problem is that at the moment even the "modern" browsers have problems handling some common attributes. The most common example is the border-radius, which has up to three versions - so if we want all browsers display the same rounding, we need to write this as:
