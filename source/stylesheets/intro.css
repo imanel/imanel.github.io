@@ -101,6 +101,9 @@ h1 {
     -webkit-filter: grayscale(0);
     margin: 5px;
   }
+  .social img {
+    width: 80px;
+  }
 
   @-moz-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 1;} }
   @-webkit-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 1;} }
