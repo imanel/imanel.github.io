@@ -9,12 +9,12 @@
   text-align: center;
 }
 
-h1, .social {
+#intro h1, #intro .social {
   opacity: 0.1;
   transition: all 1s;
 }
 
-h1:hover, .social:hover {
+#intro h1:hover, #intro .social:hover {
   opacity: 1;
 }
 
