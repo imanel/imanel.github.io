@@ -47,40 +47,28 @@ h1 {
   padding: 0;
 }
 
-@-moz-keyframes reset { 0% {opacity: 0;} 100% {opacity: 0;} }
-@-webkit-keyframes reset { 0% {opacity: 0;} 100% {opacity: 0;} }
-@keyframes reset { 0% {opacity: 0;} 100% {opacity: 0;} }
+@-webkit-keyframes fade-in { from { opacity: 0;} to { opacity: 1;} }
+@keyframes fade-in { from { opacity: 0;} to { opacity: 1;} }
 
-@-moz-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 0.1;} }
-@-webkit-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 0.1;} }
-@keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 0.1;} }
-
-h1 {
-  -moz-animation: reset 0s, fade-in 2s;
-  -webkit-animation: reset 0s, fade-in 2s;
-  animation: reset 0s, fade-in 2s;
-}
-
-.social {
-  -moz-animation: reset 2s ease-in 0s 1, fade-in 2s ease-in 0s 1;
-  -webkit-animation: reset 2s ease-in 0s 1, fade-in 2s ease-in 0s 1;
-  animation: reset 2s ease-in 0s 1, fade-in 2s ease-in 0s 1;
+h1, .social {
+  opacity: 0;
+  -webkit-animation: fade-in 2s ease-in 1;
+  animation: fade-in 2s ease-in 1;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
 }
 
 .social.blog {
-  -moz-animation-delay: 0s, 0.5s;
-  -webkit-animation-delay: 0s, 0.5s;
-  animation-delay: 0s, 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .social.github {
-  -moz-animation-delay: 0s, 1s;
-  -webkit-animation-delay: 0s, 1s;
-  animation-delay: 0s, 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 .social.twitter {
-  -moz-animation-delay: 0s, 1.5s;
-  -webkit-animation-delay: 0s, 1.5s;
-  animation-delay: 0s, 1.5s;
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 
 @media all and (max-width: 560px) {
@@ -104,8 +92,4 @@ h1 {
   .social img {
     width: 80px;
   }
-
-  @-moz-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 1;} }
-  @-webkit-keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 1;} }
-  @keyframes fade-in { 0% {opacity: 0;} 60% {opacity: 0;} 100% {opacity: 1;} }
 }
