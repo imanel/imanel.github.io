@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /websocket-ruby/autobahn/
-
-Sitemap: {{ site.url }}/sitemap.xml

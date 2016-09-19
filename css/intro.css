@@ -1,95 +1,102 @@
-#intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 560px;
-  height: 360px;
-  margin-top: -180px;
-  margin-left: -280px;
-  text-align: center;
-}
-
-#intro h1, #intro .social {
-  opacity: 0.1;
-  transition: all 1s;
-}
-
-#intro h1:hover, #intro .social:hover {
-  opacity: 1;
-}
-
-h1 {
-  font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 72px;
-  margin-top: 0;
-  padding-bottom: 50px;
-  display: inline-block;
-}
-
-.social {
-  margin: 0 60px;
-  -webkit-filter: grayscale(1);
-}
-.social.blog {
-  margin-left: 0;
-}
-.social.twitter {
-  margin-right: 0;
-}
-
-.social:hover {
-  -webkit-filter: grayscale(0);
-}
-
-.social img {
-  width: 100px;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 72px;
+  margin: 0;
+}
+
+.social img {
+  width: 100px;
+  margin: 0 80px;
+  padding: 100px 0 20px;
+}
+
+h1, .social img {
+  opacity: 0.2;
+  filter: grayscale(1);
+  transition: all 1s;
+}
+
+h1:hover, .social:hover img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* Animations */
+
 @-webkit-keyframes fade-in { from { opacity: 0;} to { opacity: 1;} }
 @keyframes fade-in { from { opacity: 0;} to { opacity: 1;} }
 
-h1, .social {
+header, .social {
   opacity: 0;
-  -webkit-animation: fade-in 2s ease-in 1;
-  animation: fade-in 2s ease-in 1;
-  -webkit-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation: fade-in 1s ease-in 1;
+  animation: fade-in 1s ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-.social.blog {
+header {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-.social.github {
+
+.social.blog {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-.social.twitter {
+.social.github {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
 }
+.social.twitter {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
 
-@media all and (max-width: 560px) {
-  #intro {
-    left: 0;
-    width: 100%;
-    height: 230px;
-    margin-left: 0;
-    margin-top: -115px;
-  }
-  h1, .social {
-    opacity: 1;
-  }
+/* Responsive */
+
+@media all and (max-width: 788px) {
   h1 {
-    font-size: 40px;
+    font-size: 48px;
   }
-  .social {
-    -webkit-filter: grayscale(0);
-    margin: 5px;
-  }
+
   .social img {
+    margin: 0 40px;
     width: 80px;
+  }
+}
+
+@media all and (max-width: 488px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .social img {
+    margin: 0 20px;
+    width: 60px;
+  }
+}
+
+@media all and (max-width: 308px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .social img {
+    margin: 0 20px;
+    width: 40px;
   }
 }

@@ -1,4 +1,0 @@
-url: "http://imanel.org"
-permalink: /blog/:year/:month/:title/
-gems:
-  - jekyll-redirect-from
