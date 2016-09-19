@@ -27,7 +27,7 @@ h1 {
 h1, .social img {
   opacity: 0.2;
   filter: grayscale(1);
-  transition: all 1s;
+  transition: all 1s, margin-left 0s, margin-right 0s, width 0s, font-size 0s;
 }
 
 h1:hover, .social:hover img {
